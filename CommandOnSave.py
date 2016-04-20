@@ -16,5 +16,5 @@ class CommandOnSave(sublime_plugin.EventListener):
                     print("Command on Save:")
                     for command in commands:
                         p = subprocess.Popen([command], shell=True, stdout=subprocess.PIPE)
-                        out, err = p.communicate()
-                        print (out.decode('utf-8'))
+                        #out, err = p.communicate()
+                        #print (out.decode('utf-8'))
